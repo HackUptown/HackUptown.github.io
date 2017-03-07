@@ -1,0 +1,127 @@
+/* 
+FONTS
+font-family: 'Baloo', cursive;
+font-family: 'Press Start 2P', cursive; 
+
+COLORS
+blue: #3C91E6
+mud: #342E37
+lime: #A2D729
+white: #FAFFFD
+orange: #FA824C
+red: 209,0,105
+*/
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: 'Baloo', cursive;
+  font-size: 1rem;
+  text-align: center;
+  cursor: url(http://cur.cursors-4u.net/games/gam-2/gam188.cur), auto;
+}
+
+header{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  background-color:rgba(124,252,0, .8);
+  padding-top: 2rem;
+}
+
+header nav{
+  background-color: #0d1a26;
+  padding: 1rem 0rem;
+  color: white;
+  /* position: fixed; */
+}
+
+header iframe{
+  margin: 1rem 0rem;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: .5rem;
+}
+
+nav a:hover{
+  color: rgb(209,0,105);  
+}
+
+h1,h3{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  font-size: 3rem;
+}
+
+h6{
+  font-size: 1.5rem;
+}
+
+section{
+  /* height: 500px; */
+  padding: 2rem 0rem;
+}
+
+.wrapper{
+  width: 50%;
+  margin: auto;
+  border-radius: 2rem;
+  padding: .5rem 1rem 4rem 1rem;
+}
+
+.info{
+  position: relative;
+}
+
+.info .triangle{
+    z-index: -2;
+    position:absolute;
+    top: 6rem;
+	width: 0;
+	height: 0;
+	border-top: 10rem solid transparent;
+	border-left: 50rem solid #342E37;
+	border-bottom: 10rem solid transparent;
+    opacity: .5;
+}
+
+.info .wrapper{
+  background-color:rgba(75,0,130, 0.5);
+}
+
+.sign-up div{
+  background-color: #3C91E6;
+  font-size: 1.5rem;
+}
+
+.sign-up form div{
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgb(169,169,169);
+  border-radius: 1rem;
+}
+
+
+
+.prizes{
+  position: relative;
+  margin-bottom: 40rem;
+}
+
+.prizes .wrapper{
+  background-color: rgba(169,169,169, .5);
+}
+
+.prizes .triangle{
+    z-index: -2;
+    position:absolute;
+  	width: 0;
+	height: 0;
+	border-top: 10rem solid transparent;
+	border-right: 30rem solid #FA824C;
+	border-bottom: 10rem solid transparent;
+    padding-left: 54%;
+}
