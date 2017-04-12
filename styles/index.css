@@ -92,19 +92,58 @@ section{
   background-color:rgba(75,0,130, 0.5);
 }
 
-.sign-up div{
+.sign-up .wrapper{
   background-color: #3C91E6;
   font-size: 1.5rem;
 }
 
-.sign-up form div{
+#submit{
   padding: 1rem;
   margin-top: 1rem;
   background-color: rgb(169,169,169);
   border-radius: 1rem;
 }
+.radio-section p, .radio-section div{
+  display: inline-block;
+}
 
+div .inputs{
+   background-color: rgb(169,169,169);
+   padding-bottom: .5rem;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   border-radius: 1rem;
+}
+.inputs .input-wrap {
+  display: inline-block;
+}
 
+.inputs label {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin: 0 0.2em;  
+}
+.inputs input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.radio-section p{
+      -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  font-size: 1rem;
+}
+
+#experience-label{
+  font-size: 1rem;
+  line-height: 0;
+}
+
+#excites{
+  width: 80%;
+  line-height: 2rem;
+}
 
 .prizes{
   position: relative;
