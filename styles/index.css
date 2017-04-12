@@ -58,6 +58,8 @@ h1,h3{
 
 h6{
   font-size: 1.5rem;
+      -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 
 section{
@@ -110,7 +112,7 @@ section{
 }
 
 div .inputs{
-   background-color: rgb(169,169,169);
+   background-color: rgb(200,200,200);
    padding-bottom: .5rem;
    padding-right: 1rem;
    padding-left: 1rem;

@@ -1,41 +1,46 @@
-// $("#submit").on("click", function(){
-// 	var email = $("input[name='email']").val();
-// 	var firstname = $("input[name='first']").val();
-// 	var lastname = $("input[name='first']").val();
-// 	var school = $("#school").val();
-// 	console.log(email);
-// 	return false
-// })
+$(".submitted").hide();
 
-$.ajax({
-	type:"post", 
-	url:"https://docs.google.com/forms/d/e/1FAIpQLSfB81GCPgZVh9Fa0TGUqiST_WSBG2tnemX3Ao2Gv5n6SIzj0g/formResponse?emailAddress=adr%40gmail.com&entry.237733927=firstname&entry.5893991=lastname&entry.242590037=Goudy&entry.423828352=7th&entry.1379881818=2&entry.653550099=1&entry.318330051=1&entry.2052573965=1&entry.2132472040=1&entry.675507291=money&emailReceipt=true"
-}).done(function(response){
-	console.log(response);
+$("form").on("submit", function(){
+	var email = $("input[name='email']").val();
+	var firstname = $("input[name='first']").val();
+	var lastname = $("input[name='first']").val();
+	var school = $("#school").val();
+	var grade = $("#grade").val();
+	var art = $("input[name='art']:checked").val();
+	var presenting = $("input[name='presenting']:checked").val();
+	var html = $("input[name='html']:checked").val();
+	var css = $("input[name='css']:checked").val();
+	var programming = $("input[name='programming']:checked").val();
+	var experience="No answer";
+	if ($("textarea").val().length > 0) {
+		experience = $("textarea").val();
+	} 
+
+	var excites = $("input[name='excites']").val();
+	// console.log(experience.length);
+	var form_url ="https://docs.google.com/forms/d/e/1FAIpQLSfB81GCPgZVh9Fa0TGUqiST_WSBG2tnemX3Ao2Gv5n6SIzj0g/formResponse?";
+	var whole_url =form_url+"emailAddress="+encodeURIComponent(email)
+		+"&entry.237733927="+encodeURIComponent(firstname)
+		+"&entry.5893991="+encodeURIComponent(lastname)
+		+"&entry.242590037="+school
+		+"&entry.423828352="+grade
+		+"&entry.1379881818="+art
+		+"&entry.653550099="+presenting
+		+"&entry.318330051="+html
+		+"&entry.2052573965="+css
+		+"&entry.2132472040="+programming
+		+"&entry.687218358="+encodeURIComponent(experience)
+		+"&entry.675507291="+encodeURIComponent(excites)
+		+"&emailReceipt=true";
+	$.ajax({
+		type:"post", 
+		url: whole_url
+	}).done(function(response){
+			$("form").hide();
+			$(".submitted").show();
+	});
+
+	$("form").hide();
+	$(".submitted").show();
+	return false
 });
-
-// var form_url ="https://docs.google.com/forms/d/e/1FAIpQLSfB81GCPgZVh9Fa0TGUqiST_WSBG2tnemX3Ao2Gv5n6SIzj0g/formResponse?"
-// var email = "emailAddress=" + email
-// &entry.237733927=firstname
-// &entry.5893991=lastname
-// &entry.242590037=Goudy
-// &entry.423828352=7th
-// &entry.1379881818=2
-// &entry.653550099=1
-// &entry.318330051=1
-// &entry.2052573965=1
-// &entry.2132472040=1
-// &entry.675507291=money
-// &emailReceipt=true
-
-
-
-
-// var string = "as@gmail.com" + "hello entry";
-
-// var uri = encodeURIComponent(string);
-
-// console.log(uri);
-
-
-// entry.237733927=Adriana&entry.5893991=C&entry.797610137=adri%40gmail.com&entry.242590037=Latin&entry.423828352=6th&entry.1379881818=1&entry.653550099=1&entry.318330051=1&entry.2052573965=1&entry.2132472040=1&entry.675507291=money&emailReceipt=true

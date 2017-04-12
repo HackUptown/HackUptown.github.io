@@ -21,12 +21,13 @@
     <div class="wrapper">
       <h3>Info</h3>
       <h6>What is a Hackathon</h6>
-        <p>A hackathon is an event where people get together to come up with ideas and try to make something to solve a problem.</p>
+        <p>A hackathon is an event where people get together to come up with ideas and try to make something to solve a problem. This hackathon will have free food and drinks. You'll have lots of fun if you come!</p>
       <h6>Should I Go?</h6>
         <p>YES! This hackathon is for middle schoolers of all experience levels. You don't have to know how to code in order to be able to participate.</p>
       <h6>Details</h6>
-        <p>When: May 42, 2020</p>
+        <p>When: May 13, 2017</p>
         <p>Where: Latin Uptown Space</p>
+        <p></p>
     </div>
       
   </section>
@@ -37,20 +38,22 @@
     
       <form>
         <label for="email">Email:</label>
-        <input type="text" name="email" placeholder="email@email.com" ><br>
+        <input type="text" name="email" placeholder="email@email.com" required><br>
         <label for="first">First Name:</label>
-        <input type="text" name="first" placeholder="First name" ><br>
+        <input type="text" name="first" placeholder="First name" required><br>
         <label for="last">Last Name:</label>
-        <input type="text" name="last" placeholder="Last name" ><br>
+        <input type="text" name="last" placeholder="Last name" required><br>
         <label for="school">School:</label>
-        <select name="school" id="school">
+        <select required name="school" id="school">
+          <option value="">Please select</option>
           <option value="Courtenay">Courtenay</option>
           <option value="Goudy">Goudy</option>
           <option value="Latin">Latin</option>
           <option value="McCutcheon">McCutcheon</option>
         </select><br>
         <label for="grade">Grade Level:</label>
-        <select name="grade" id="grade">
+        <select required name="grade" id="grade">
+          <option value="">Please select</option>
           <option value="6th">6th</option>
           <option value="7th">7th</option>
           <option value="8th">8th</option>
@@ -63,7 +66,7 @@
             <div class="inputs">
               <div class="input-wrap">
                 <label class="radio-input">1</label>
-                <input type="radio" name="art" value="1"> 
+                <input type="radio" name="art" value="1" required> 
               </div>
               <div class="input-wrap">
                 <label class="radio-input">2</label>
@@ -92,7 +95,7 @@
             <div class="inputs">
               <div class="input-wrap">
                 <label class="radio-input">1</label>
-                <input type="radio" name="presenting" value="1" > 
+                <input type="radio" name="presenting" value="1" required > 
               </div>
               <div class="input-wrap">
                 <label class="radio-input">2</label>
@@ -121,7 +124,7 @@
             <div class="inputs">
               <div class="input-wrap">
                 <label class="radio-input">1</label>
-                <input type="radio" name="html" value="1"> 
+                <input type="radio" name="html" value="1" required> 
               </div>
               <div class="input-wrap">
                 <label class="radio-input">2</label>
@@ -150,7 +153,7 @@
             <div class="inputs">
               <div class="input-wrap">
                 <label class="radio-input">1</label>
-                <input type="radio" name="css" value="1"> 
+                <input type="radio" name="css" value="1" required> 
               </div>
               <div class="input-wrap">
                 <label class="radio-input">2</label>
@@ -179,7 +182,7 @@
             <div class="inputs">
               <div class="input-wrap">
                 <label class="radio-input">1</label>
-                <input type="radio" name="programming" value="1"  > 
+                <input type="radio" name="programming" value="1" required > 
               </div>
               <div class="input-wrap">
                 <label class="radio-input">2</label>
@@ -206,11 +209,17 @@
           <textarea name="experience" rows="10" cols="50" placeholder="Your response here"></textarea><br>
 
         <label for="excites">What most excites you about a Hackathon?</label>
-        <input type="text" name="excites" placeholder="I'm excited about..." id="excites"><br><br>
+        <input type="text" name="excites" placeholder="I'm excited about..." id="excites" required><br><br>
         
         <input type="submit" name="" id="submit">
       </form>
+        
+        <div class="submitted">
+          You're all set! See you soon!
+        </div>
     </div>
+
+
   </section>
   <section class="prizes">
     <a id="prizes"></a>
