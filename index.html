@@ -35,8 +35,8 @@
     <a id="sign-up"></a>
     <div class="wrapper">
       <h3>Sign Up</h3>
-    
-      <form>
+      <form id="safari-form">
+      <div class="pt1">
         <label for="email">Email:</label>
         <input type="text" name="email" placeholder="email@email.com" required><br>
         <label for="first">First Name:</label>
@@ -58,8 +58,9 @@
           <option value="7th">7th</option>
           <option value="8th">8th</option>
         </select><br><br>
-        
-        <div class="radio-section">
+       </div>
+
+        <div class="radio-section pt2">
           <label for="art">How comfortable are you with Art?</label><br>
           <p>(Drawing, sketching, photo editing, etc.)</p><br>
           <p>Not comfortable</p>
@@ -89,7 +90,7 @@
           <p>I can draw anything!</p>
         </div><br>
 
-        <div class="radio-section">
+        <div class="radio-section pt3">
           <label for="presenting">How comfortable do you feel presenting to others?</label><br>
           <p>Not comfortable</p>
             <div class="inputs">
@@ -118,7 +119,7 @@
           <p>I love presenting!</p>
         </div><br>
 
-        <div class="radio-section">
+        <div class="radio-section pt4">
           <label for="html">Do you know HTML?</label><br>
           <p>Never heard of it</p>
             <div class="inputs">
@@ -147,7 +148,7 @@
           <p>I'm a pro</p>
         </div><br>
 
-        <div class="radio-section">
+        <div class="radio-section pt5">
           <label for="css">Do you know CSS?</label><br>
           <p>Never heard of it</p>
             <div class="inputs">
@@ -176,7 +177,7 @@
           <p>I'm a pro</p>
         </div><br>
 
-        <div class="radio-section">
+        <div class="radio-section pt6">
           <label for="programming">Do you know Blockly programming? (ex: Scratch, Tynker)</label><br>
           <p>Never heard of it</p>
             <div class="inputs">
@@ -205,13 +206,15 @@
           <p>I'm a pro</p>
         </div><br>
 
-        <label for="experience" id="experience-label">What other technology and art skills or experience do you have? (Ex: Have used Tinkercad, 123dsculpt, vinyl cutter, 3D Printer, participated in a summer tech camp, etc.)</label><br>
+        <div class="pt7">
+          <label for="experience" id="experience-label">What other technology and art skills or experience do you have? (Ex: Have used Tinkercad, 123dsculpt, vinyl cutter, 3D Printer, participated in a summer tech camp, etc.)</label><br>
           <textarea name="experience" rows="10" cols="50" placeholder="Your response here"></textarea><br>
 
-        <label for="excites">What most excites you about a Hackathon?</label>
-        <input type="text" name="excites" placeholder="I'm excited about..." id="excites" required><br><br>
+          <label for="excites">What most excites you about a Hackathon?</label>
+         <input type="text" name="excites" placeholder="I'm excited about..." id="excites" required><br><br>
         
         <input type="submit" name="" id="submit">
+        </div>
       </form>
         
         <div class="submitted">
