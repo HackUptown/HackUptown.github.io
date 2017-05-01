@@ -1,0 +1,28 @@
+@media(max-width: 650px){
+	html{
+	  font-size: 15px;
+	}
+	.wrapper{
+		width:100%;
+		padding: 0;
+		border-radius: 0;
+		padding: 2rem 0rem;
+	}
+	.triangle{
+		display: none;
+	}
+	header{
+		font-size: 1rem;
+	}
+
+	header h1{
+		font-size: 200%;
+		padding: 2rem;
+	}
+	iframe{
+		display: none;
+	}
+	section{
+		padding: 0rem;
+	}
+}
