@@ -35,6 +35,8 @@ $("form").on("submit", function(){
 
 
 			var excites = $("input[name='excites']").val();
+			var allergies = $("input[name='allergies']").val();
+			
 			// console.log(experience.length);
 			var form_url ="https://docs.google.com/forms/d/e/1FAIpQLSfB81GCPgZVh9Fa0TGUqiST_WSBG2tnemX3Ao2Gv5n6SIzj0g/formResponse?";
 			var whole_url =form_url+"emailAddress="+encodeURIComponent(email)
@@ -49,6 +51,7 @@ $("form").on("submit", function(){
 				+"&entry.2132472040="+programming
 				+"&entry.687218358="+encodeURIComponent(experience)
 				+"&entry.675507291="+encodeURIComponent(excites)
+				+"&entry.276467424="+encodeURIComponent(allergies)
 				+"&emailReceipt=true";
 			$.ajax({
 				type:"post", 
