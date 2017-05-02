@@ -168,3 +168,34 @@ div .inputs{
 	border-bottom: 10rem solid transparent;
     padding-left: 54%;
 }
+
+ol, ul{
+  text-align: left;
+}
+
+.welcome{
+  background-color: #3581B8;
+}
+
+.welcome p, .sample a{
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.agenda{
+  background-color: #DEE2D6;
+}
+
+.marvel{
+  background-color: #FCB07E;
+}
+
+.applab{
+  background-color: #5FAD41;
+}
+
+.sample{
+  background-color:#391463;
+}
