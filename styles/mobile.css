@@ -25,4 +25,9 @@
 	section{
 		padding: 0rem;
 	}
+	.mentor iframe{
+		display: block;
+		width: 100%;
+	}
 }
+
