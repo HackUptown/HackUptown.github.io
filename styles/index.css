@@ -151,7 +151,6 @@ div .inputs{
 
 .prizes{
   position: relative;
-  margin-bottom: 40rem;
 }
 
 .prizes .wrapper{
@@ -166,7 +165,20 @@ div .inputs{
 	border-top: 10rem solid transparent;
 	border-right: 30rem solid #FA824C;
 	border-bottom: 10rem solid transparent;
-    padding-left: 54%;
+  border-left: 0px;
+  padding-left: 58%;
+}
+
+.sponsors{
+  margin-bottom: 10rem;
+}
+
+.sponsors .wrapper{
+  background-color: #5FAD41;
+}
+
+.sponsors img{
+  width: 80%;
 }
 
 ol, ul{
